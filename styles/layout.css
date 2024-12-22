@@ -17,8 +17,9 @@
   }
 
   & aside {
-    & img {
-      padding: 1.25rem;
+    padding: 1.25rem;
+
+    & #bg-img {
       border-radius: 12px;
     }
   }

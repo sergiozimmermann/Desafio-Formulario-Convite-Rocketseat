@@ -1,0 +1,28 @@
+aside .aside-container {
+  position: relative;
+
+  #title {
+    position: absolute;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+    & #logo-img {
+      height: 48px;
+    }
+
+    & #text-title {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      & .description-title {
+        font: 300 1rem var(--font-family-body);
+        color: var(--text-heading);
+      }
+    }
+  }
+}
