@@ -51,6 +51,8 @@ body {
 
   font: var(--text);
   color: var(--text-body);
+  background-color: var(--shape-background);
+  height: 100vh;
 }
 
 h1 {
