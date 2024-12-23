@@ -1,0 +1,78 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  fieldset {
+    border: none;
+
+    & legend {
+      display: inline-flex;
+      margin-bottom: 1.5rem;
+
+      & svg {
+        width: 1.5rem;
+        height: 1.5rem;
+
+        align-self: flex-end;
+
+        & path {
+          stroke: var(--input-placeholder);
+        }
+      }
+
+      .section-title {
+        padding-left: 0.75rem;
+      }
+    }
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+.sobre-evento {
+  & .form-wrapper {
+    display: grid;
+    grid-template:
+      "title-invite title-invite"
+      "init-date-invite end-date-invite"
+      "type-invite local-invite"
+      "description-invite description-invite";
+
+    gap: 1rem;
+
+    & .input-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+  }
+}
+
+#title-invite {
+  grid-area: title-invite;
+}
+
+#init-date-invite {
+  grid-area: init-date-invite;
+}
+
+#end-date-invite {
+  grid-area: end-date-invite;
+}
+
+#type-invite {
+  grid-area: type-invite;
+}
+
+#local-invite {
+  grid-area: local-invite;
+}
+
+#description-invite {
+  grid-area: description-invite;
+}
