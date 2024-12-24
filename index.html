@@ -144,12 +144,13 @@
                   </div>
                   <div id="description-invite" class="input-wrapper">
                     <label for="description">Descrição</label>
-                    <input
-                      type="text"
-                      id="description"
+                    <textarea
                       name="description"
+                      id="description"
                       placeholder="Escreva sobre os detalhes do evento"
-                    />
+                      [resized]="false"
+                      rows="5"
+                    ></textarea>
                   </div>
                 </div>
               </fieldset>

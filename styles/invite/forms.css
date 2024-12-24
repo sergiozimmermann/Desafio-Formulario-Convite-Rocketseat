@@ -34,6 +34,16 @@ form {
   }
 }
 
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  & label {
+    font: var(--text-sm);
+  }
+}
+
 .sobre-evento {
   & .form-wrapper {
     display: grid;
@@ -44,12 +54,6 @@ form {
       "description-invite description-invite";
 
     gap: 1rem;
-
-    & .input-wrapper {
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
   }
 }
 
