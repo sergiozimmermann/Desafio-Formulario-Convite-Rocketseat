@@ -1,0 +1,36 @@
+#sobre-evento {
+  & .form-wrapper {
+    display: grid;
+    grid-template:
+      "title-invite title-invite"
+      "init-date-invite end-date-invite"
+      "type-invite local-invite"
+      "description-invite description-invite";
+
+    gap: 1rem;
+  }
+}
+
+#title-invite {
+  grid-area: title-invite;
+}
+
+#init-date-invite {
+  grid-area: init-date-invite;
+}
+
+#end-date-invite {
+  grid-area: end-date-invite;
+}
+
+#type-invite {
+  grid-area: type-invite;
+}
+
+#local-invite {
+  grid-area: local-invite;
+}
+
+#description-invite {
+  grid-area: description-invite;
+}

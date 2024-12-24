@@ -7,14 +7,13 @@ form {
     border: none;
 
     & legend {
-      display: inline-flex;
+      display: flex;
+      align-items: center;
       margin-bottom: 1.5rem;
 
       & svg {
         width: 1.5rem;
         height: 1.5rem;
-
-        align-self: flex-end;
 
         & path {
           stroke: var(--input-placeholder);
@@ -44,39 +43,13 @@ form {
   }
 }
 
-.sobre-evento {
-  & .form-wrapper {
-    display: grid;
-    grid-template:
-      "title-invite title-invite"
-      "init-date-invite end-date-invite"
-      "type-invite local-invite"
-      "description-invite description-invite";
+.color-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 
-    gap: 1rem;
+  & label {
+    font: var(--text-sm);
+    color: white;
   }
-}
-
-#title-invite {
-  grid-area: title-invite;
-}
-
-#init-date-invite {
-  grid-area: init-date-invite;
-}
-
-#end-date-invite {
-  grid-area: end-date-invite;
-}
-
-#type-invite {
-  grid-area: type-invite;
-}
-
-#local-invite {
-  grid-area: local-invite;
-}
-
-#description-invite {
-  grid-area: description-invite;
 }
