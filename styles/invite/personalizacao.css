@@ -1,5 +1,15 @@
 #personalizacao {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+
+  & legend {
+    margin-bottom: 1.5rem;
+  }
+
+  & section + section {
+    margin-top: 1.75rem;
+  }
+}
+
+#event-theme {
 }
