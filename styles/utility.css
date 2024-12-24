@@ -6,6 +6,9 @@
 .bg-blue {
   background-color: var(--brand-light);
 }
+.bg-navy {
+  background-color: var(--navy);
+}
 .bg-purple {
   background-color: var(--purple);
 }
@@ -14,6 +17,9 @@
 }
 .bg-pink {
   background-color: var(--pink);
+}
+.bg-red {
+  background-color: var(--danger-color);
 }
 .bg-orange {
   background-color: var(--orange);
@@ -29,7 +35,4 @@
 }
 .bg-cyan {
   background-color: var(--cyan);
-}
-.bg-navy {
-  background-color: var(--navy);
 }
