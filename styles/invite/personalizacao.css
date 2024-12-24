@@ -12,4 +12,53 @@
 }
 
 #event-theme {
+  & .theme-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 0.5rem;
+
+    & .theme-inner {
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      padding-inline: 0.25rem;
+      padding-block: 0.25rem 0.5rem;
+
+      background-color: var(--shape-button);
+      border-radius: 0.5rem;
+
+      & .theme-img {
+        width: 100%;
+      }
+
+      & label {
+        text-align: center;
+      }
+
+      &:hover {
+        background-color: var(--shape-hover);
+      }
+
+      &:has(input[type="radio"]:checked) {
+        /* outline: 2px solid var(--brand-light); */
+        box-shadow: inset 0 0 0 2px var(--brand-light);
+      }
+
+      & input[type="radio"] {
+        cursor: pointer;
+
+        position: absolute;
+        top: 0;
+
+        width: 100%;
+        height: 100%;
+
+        opacity: 0;
+      }
+    }
+  }
 }

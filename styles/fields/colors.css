@@ -4,8 +4,6 @@
     cursor: pointer;
 
     display: flex;
-    align-items: center;
-    justify-content: center;
 
     width: 2.5rem;
     height: 2.5rem;
@@ -14,7 +12,7 @@
     border-radius: 50%;
 
     &:hover {
-      outline: 1px solid var(--brand-light);
+      background-color: var(--shape-hover);
     }
 
     &:has(input[type="radio"]:checked) {
@@ -24,6 +22,8 @@
     & .color-bg {
       width: 1.75rem;
       height: 1.75rem;
+
+      margin: auto;
 
       border-radius: 50%;
     }
