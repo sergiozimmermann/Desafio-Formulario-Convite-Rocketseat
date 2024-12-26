@@ -1,0 +1,23 @@
+.file-wrapper {
+  display: flex;
+  align-items: center;
+
+  height: 3rem;
+
+  padding-block: 0.25rem;
+
+  .input-file {
+    all: unset;
+
+    align-content: center;
+
+    width: 14rem;
+    height: 100%;
+
+    padding-left: 0.75rem;
+
+    &::-webkit-file-upload-button {
+      display: none;
+    }
+  }
+}
