@@ -3,22 +3,35 @@
   color: var(--pink);
 }
 
-.btn-secondary {
+.btn {
   cursor: pointer;
   max-height: 100%;
 
   display: flex;
-
   align-items: center;
+  gap: 0.75rem;
 
+  padding: 0.875rem 1.25rem;
+
+  background-color: var(--brand-dark);
+
+  font: var(--text-semibold);
+  color: var(--text-heading);
+
+  border: none;
+  border-radius: 0.5rem;
+
+  &:hover {
+    background-color: var(--brand-mid);
+  }
+}
+
+.btn-secondary {
   gap: 0.5rem;
 
   padding: 0.5rem 0.75rem;
 
   background-color: var(--shape-button);
-
-  border: none;
-  border-radius: 0.5rem;
 
   font: var(--text-sm-semibold) !important;
   color: var(--text-heading);
