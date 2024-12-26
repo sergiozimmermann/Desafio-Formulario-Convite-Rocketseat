@@ -1,7 +1,7 @@
 .switch-wrapper {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 0.75rem;
 
   & .switch-inner {
     position: relative;

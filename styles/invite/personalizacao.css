@@ -68,7 +68,7 @@
     margin-top: 1.75rem;
 
     & .input-wrapper {
-      gap: 12px;
+      gap: 0.75rem;
     }
 
     & #estilo {
@@ -81,6 +81,10 @@
 
     & #capa {
       width: 67.65%;
+
+      & .file-wrapper {
+        padding-block: 0.25rem;
+      }
     }
   }
 }
