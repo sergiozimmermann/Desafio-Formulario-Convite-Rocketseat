@@ -20,6 +20,19 @@ textarea {
   }
 }
 
+/* Remover setas e spinners do input */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 textarea {
   padding: 1rem;
   resize: none;
@@ -31,6 +44,34 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
 }
 
 input[type="text"],
+input[type="mail"],
+input[type="number"],
 input[type="datetime-local"] {
   height: 3rem;
+}
+
+.input-wrapper:has(input:valid) {
+  & .input-error {
+    display: none;
+  }
+}
+
+input:invalid {
+  outline: 1px solid var(--danger-color);
+}
+
+.input-error {
+  display: flex;
+
+  align-items: center;
+  gap: 0.5rem;
+
+  padding-block: 0.5rem 0.25rem;
+
+  font: var(--text-xs);
+  color: var(--danger-color);
+
+  & svg path {
+    fill: var(--danger-color);
+  }
 }

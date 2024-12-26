@@ -1,0 +1,21 @@
+#dados-contato {
+  & .form-wrapper {
+    display: grid;
+    grid-template-areas:
+      "nome-contato nome-contato"
+      "email-contato telefone-contato";
+    gap: 1rem;
+
+    & #nome-contato {
+      grid-area: nome-contato;
+    }
+
+    & #email-contato {
+      grid-area: email-contato;
+    }
+
+    & telefone-contato {
+      grid-area: telefone-contato;
+    }
+  }
+}
