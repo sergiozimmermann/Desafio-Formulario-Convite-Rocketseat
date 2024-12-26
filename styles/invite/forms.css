@@ -37,7 +37,7 @@ form {
   display: flex;
   flex-direction: column;
 
-  & label {
+  & > label {
     font: var(--text-sm);
 
     margin-bottom: 0.75rem;
