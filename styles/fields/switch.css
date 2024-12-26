@@ -1,0 +1,89 @@
+.switch-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  & .switch-inner {
+    position: relative;
+
+    display: inline-block;
+
+    width: 4rem;
+    height: 2rem;
+
+    /* borda */
+    box-shadow: inset 0 0 0 1px var(--input-stroke);
+    border-radius: 2rem;
+
+    & .switch-slider {
+      cursor: pointer;
+
+      position: absolute;
+
+      width: 100%;
+      height: 100%;
+
+      border-radius: 2rem;
+
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+
+      &::before {
+        content: "";
+
+        position: absolute;
+
+        left: 0.25rem;
+
+        /* centraliza */
+        top: 50%;
+        transform: translateY(-50%);
+
+        height: 1.5rem;
+        width: 1.5rem;
+
+        /* cor da bolinha default */
+        background-color: var(--input-stroke);
+        border-radius: 50%;
+
+        /* duração da animação */
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+    }
+
+    & .input-switch {
+      cursor: pointer;
+
+      position: absolute;
+      z-index: 1;
+
+      width: 100%;
+      height: 100%;
+
+      opacity: 0;
+
+      border-radius: 2rem;
+    }
+
+    /* cor de fundo padrão */
+    &:has(.input-switch:not(:checked)) {
+      background-color: var(--input-base);
+    }
+
+    /* cor de fundo quando ativo */
+    &:has(.input-switch:checked) {
+      background-color: var(--brand-light);
+    }
+
+    /* animação switch */
+    .input-switch:checked + .switch-slider:before {
+      -webkit-transform: translateX(2rem);
+      -ms-transform: translateX(2rem);
+      transform: translateX(2rem) translateY(-50%);
+
+      /* cor da bolinha quando ativo */
+      background-color: var(--text-heading);
+    }
+  }
+}
