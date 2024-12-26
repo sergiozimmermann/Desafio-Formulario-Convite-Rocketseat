@@ -2,10 +2,6 @@
   display: flex;
   flex-direction: column;
 
-  & legend {
-    margin-bottom: 1.5rem;
-  }
-
   & section + section {
     margin-top: 1.75rem;
   }
