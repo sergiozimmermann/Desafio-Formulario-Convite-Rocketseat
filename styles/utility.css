@@ -3,6 +3,31 @@
   color: var(--pink);
 }
 
+.btn-secondary {
+  cursor: pointer;
+  max-height: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.5rem;
+
+  padding: 0.5rem 0.75rem;
+
+  background-color: var(--shape-button);
+
+  border: none;
+  border-radius: 0.5rem;
+
+  font: var(--text-sm-semibold) !important;
+  color: var(--text-heading);
+
+  &:hover {
+    background-color: var(--shape-hover);
+  }
+}
+
 .bg-blue {
   background-color: var(--brand-light);
 }
