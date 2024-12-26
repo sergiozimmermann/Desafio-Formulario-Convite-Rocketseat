@@ -16,7 +16,7 @@ form {
         height: 1.5rem;
 
         & path {
-          stroke: var(--input-placeholder);
+          fill: var(--input-placeholder);
         }
       }
 
@@ -36,10 +36,11 @@ form {
 .input-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
 
   & label {
     font: var(--text-sm);
+
+    margin-bottom: 0.75rem;
   }
 }
 
